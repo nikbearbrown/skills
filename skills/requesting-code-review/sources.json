@@ -1,5 +1,6 @@
 {
  "slug": "requesting-code-review",
+ "summary": "It keeps the upstream idea (get a reviewer who has only the work product, early and often), makes it reviewer-agnostic, and adds what stronger variants require of a review.",
  "derivedFrom": [
   {
    "repo": "obra/superpowers",
@@ -9,7 +10,8 @@
    "copyright": "Copyright (c) 2025 Jesse Vincent",
    "sha256": "d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8",
    "role": "Primary basis",
-   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/requesting-code-review/SKILL.md"
+   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/requesting-code-review/SKILL.md",
+   "took": "the early-and-often principle, when to request, fixing a base and head commit, handing the reviewer crafted context instead of the session history, the Critical/Important/Minor handling, pushing back with reasoning, and the worked example."
   },
   {
    "repo": "brunob54/superpowers-orchestrator",
@@ -19,7 +21,8 @@
    "copyright": "Copyright (c) 2025 Jesse Vincent",
    "sha256": "e1986478fcdb5b51231f8ff38e80f6044c7321bb63e4d4000df1f81f97891703",
    "role": "Added ideas",
-   "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/requesting-code-review/SKILL.md"
+   "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/requesting-code-review/SKILL.md",
+   "took": "the built-in security pass and the list of changes that trigger it, \"Critical and High security findings block merge\", the adversarial pass for tricky logic, and the requirement that a review give severity, file references and a merge-readiness verdict."
   },
   {
    "repo": "thepragmaticbear/bearpaws",
@@ -29,7 +32,8 @@
    "copyright": "Copyright (c) 2025 Jesse Vincent",
    "sha256": "cf9dfb6cab5dc210c3c16754b27b1ef735a8ee9a02cc425f991e8c9b2c1d78d1",
    "role": "Added ideas",
-   "url": "https://github.com/thepragmaticbear/bearpaws/blob/9141dd043814d5e5c292d5d9c619adbdffdc4a05/skills/requesting-code-review/SKILL.md"
+   "url": "https://github.com/thepragmaticbear/bearpaws/blob/9141dd043814d5e5c292d5d9c619adbdffdc4a05/skills/requesting-code-review/SKILL.md",
+   "took": "the brief a reviewer needs (project conventions, verification evidence, decisions already made, unresolved concerns) and the demand that a review enumerate failure modes, state what would make its own conclusion wrong, list what it did not check, and label break attempts as executed or reasoned."
   },
   {
    "repo": "lsy041015/orchestra",
@@ -39,20 +43,76 @@
    "copyright": "Copyright (c) 2025 Jesse Vincent",
    "sha256": "a90dfff3fb47d815227230706773fd6377b29eecae2fb6538a813c09e8bb655e",
    "role": "Added ideas",
-   "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/requesting-code-review/SKILL.md"
+   "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/requesting-code-review/SKILL.md",
+   "took": "never call a self-review independent, include staged, unstaged and untracked changes in the range, scope a re-review to the finding and its fix, and stop retrying after two failed fixes with the same cause."
+  }
+ ],
+ "changed": [
+  "The description says what the skill covers and lists the phrases that should trigger it. Upstream's was only \"Use when completing tasks, implementing major features, or before merging to verify work meets requirements\".",
+  "The reviewer can be another agent, a fresh session or a person. Upstream and every variant assume a particular subagent type.",
+  "Upstream's reviewer template lived in a separate file (code-reviewer.md). Its content is replaced by a short brief and a list of what a good review contains, written inline, so the skill stands alone. The template file itself was not read.",
+  "Added a severity table with what to do at each level.",
+  "Removed the \"superpowers\" paths and namespaces from the example."
+ ],
+ "dropped": [
+  "The red-team agent and the automatic fix pipeline from brunob54/superpowers-orchestrator, which need that repository's agents.",
+  "The context-snapshot.json handling from the same source, which is specific to its tooling.",
+  "The review-package helper script and ledger from lsy041015/orchestra.",
+  "The coordinator-context-budget argument for dispatching a reviewer. The independence argument is kept."
+ ],
+ "findings": [
+  {
+   "repo": "obra/superpowers",
+   "finding": "The description gives only the trigger. The reviewer template is in a separate file (code-reviewer.md) that a lone copy does not have, and the skill assumes a \"general-purpose subagent\" exists. It does not say what a usable review must contain."
+  },
+  {
+   "repo": "brunob54/superpowers-orchestrator",
+   "finding": "Routed by other skills of its own (using-superpowers, executing-plans), reads a context-snapshot.json that only its tooling writes, and dispatches its own named reviewer and red-team agents."
+  },
+  {
+   "repo": "thepragmaticbear/bearpaws",
+   "finding": "Dispatches a bp:code-reviewer agent and the strict \"four named gates\" format only works with that agent's template. The idea is sound and is kept in a portable form."
+  },
+  {
+   "repo": "lsy041015/orchestra",
+   "finding": "Depends on a review-package helper that needs a plan file and on orchestra: skill names, and mixes tool names for two different hosts in one step."
   }
  ],
  "examined": [
-  "gylove1994/superpowers-deepseek-v4",
-  "jnmetacode/superpowers-zh",
-  "leodorareluctant259/superpowers-zh",
-  "mzored/superpowers-cc-to-codex"
+  {
+   "repo": "gylove1994/superpowers-deepseek-v4",
+   "note": "A variant of upstream (83% similar)."
+  },
+  {
+   "repo": "jnmetacode/superpowers-zh",
+   "note": "A Chinese translation of upstream."
+  },
+  {
+   "repo": "leodorareluctant259/superpowers-zh",
+   "note": "A Chinese translation of upstream."
+  },
+  {
+   "repo": "mzored/superpowers-cc-to-codex",
+   "note": "A Codex-backed port, tied to those tools."
+  }
  ],
  "excluded": [
-  "Athyrr/aikit",
-  "Fintama/swisper-superpowers",
-  "Itzalive/resistance-ai",
-  "orkeren21/shipshape"
+  {
+   "repo": "Athyrr/aikit",
+   "why": "no license declared"
+  },
+  {
+   "repo": "Fintama/swisper-superpowers",
+   "why": "no license declared"
+  },
+  {
+   "repo": "Itzalive/resistance-ai",
+   "why": "no license declared"
+  },
+  {
+   "repo": "orkeren21/shipshape",
+   "why": "no license declared"
+  }
  ],
  "refactored": "2026-10-20"
 }

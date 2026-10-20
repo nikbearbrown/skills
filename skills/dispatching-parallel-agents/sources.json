@@ -1,5 +1,6 @@
 {
  "slug": "dispatching-parallel-agents",
+ "summary": "It keeps the upstream pattern (one focused worker per independent problem, dispatched together) and adds a stricter independence test and a better list of what not to delegate.",
  "derivedFrom": [
   {
    "repo": "obra/superpowers",
@@ -9,7 +10,8 @@
    "copyright": "Copyright (c) 2025 Jesse Vincent",
    "sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c",
    "role": "Primary basis",
-   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/dispatching-parallel-agents/SKILL.md"
+   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/dispatching-parallel-agents/SKILL.md",
+   "took": "the principle, the four-step pattern (split into domains, write focused briefs, dispatch together, review and integrate), the brief structure, the good-and-bad brief contrasts, the example brief and the worked case."
   },
   {
    "repo": "brunob54/superpowers-orchestrator",
@@ -19,7 +21,8 @@
    "copyright": "Copyright (c) 2025 Jesse Vincent",
    "sha256": "439b8eb05268a2dcf29e7e2bed61e3c5237270f9f6e028fdf5a2d5c0f926739d",
    "role": "Added ideas",
-   "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/dispatching-parallel-agents/SKILL.md"
+   "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/dispatching-parallel-agents/SKILL.md",
+   "took": "the three-condition decision check with \"otherwise run sequentially\", \"do not use for content relay\" (worker replies are compressed, so fetch raw content yourself), dispatching all workers in one step, never forwarding session history, running the full suite plus cross-domain checks before calling the work complete, and the risks list."
   },
   {
    "repo": "lsy041015/orchestra",
@@ -29,20 +32,80 @@
    "copyright": "Copyright (c) 2025 Jesse Vincent",
    "sha256": "c968ac3d31de2497849b1ecca94981b3ceacf6c6eb121126e92ded373cf91ac0",
    "role": "Added ideas",
-   "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/dispatching-parallel-agents/SKILL.md"
+   "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/dispatching-parallel-agents/SKILL.md",
+   "took": "the boundary checklist, \"worker reports are evidence, not approval\", \"do not use for exploration, planning, diagnosis, review or a second opinion\", workers do not start workers, and stop retrying after two failed fixes with the same cause."
+  }
+ ],
+ "changed": [
+  "The description says what the skill does and what it is not for. Upstream's was \"Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies\".",
+  "Made it host-neutral: \"workers\" and \"agents\" instead of a specific subagent tool or call syntax.",
+  "Replaced the Graphviz decision diagram with a plain checklist of conditions.",
+  "Added the instruction to read every actual diff, not only each worker's summary.",
+  "Removed the preset model names, the plugin namespaces and the cache-TTL discussion, which are specific to particular hosts and vendors."
+ ],
+ "dropped": [
+  "The \"skill leakage prevention\" line telling workers not to invoke the originating plugin's skills, which only makes sense inside that plugin. The general version (\"tell each worker it is a focused worker with one job\") is kept.",
+  "The model-tier routing, ledger and Ruling mechanics from lsy041015/orchestra.",
+  "The prompt-cache rationale from brunob54/superpowers-orchestrator, which depends on a particular API and a five-minute default that may change.",
+  "The \"Key Benefits\" and \"Time saved\" sections found in a variant, which restate the premise."
+ ],
+ "findings": [
+  {
+   "repo": "obra/superpowers",
+   "finding": "The description gives only the trigger. The skill assumes a \"general-purpose subagent\" and a Graphviz renderer, and the \"when not to use\" guidance is scattered over two places."
+  },
+  {
+   "repo": "huangbaixun/harness-engineering",
+   "finding": "The upstream text with two changes: the name is prefixed with \"harness:\", and a banner requires reading harness-delta.md before use. That file is not part of the skill, so a lone copy has an instruction it cannot follow."
+  },
+  {
+   "repo": "gylove1994/superpowers-deepseek-v4",
+   "finding": "Adds an instruction to invoke confirming-worktree-before-edit, a skill that is not here, and a \"Time saved\" claim with no measurement."
+  },
+  {
+   "repo": "brunob54/superpowers-orchestrator",
+   "finding": "Hard-wires its own plugin name into the brief (\"Do NOT invoke any skills from the superpowers-orchestrator plugin\") and relies on a five-minute prompt-cache default that is vendor- and time-specific."
+  },
+  {
+   "repo": "lsy041015/orchestra",
+   "finding": "Names specific models and agent presets and defers to another skill in its own namespace. Allowed only when the user explicitly asks for parallel work, which is stricter than the other sources but makes it unusable as a general skill."
   }
  ],
  "examined": [
-  "jnmetacode/superpowers-zh",
-  "leodorareluctant259/superpowers-zh",
-  "mzored/superpowers-cc-to-codex",
-  "thepragmaticbear/bearpaws"
+  {
+   "repo": "jnmetacode/superpowers-zh",
+   "note": "A Chinese translation of upstream."
+  },
+  {
+   "repo": "leodorareluctant259/superpowers-zh",
+   "note": "A Chinese translation of upstream."
+  },
+  {
+   "repo": "mzored/superpowers-cc-to-codex",
+   "note": "A Codex-backed port, tied to those tools."
+  },
+  {
+   "repo": "thepragmaticbear/bearpaws",
+   "note": "Upstream recast in XML tags and shortened."
+  }
  ],
  "excluded": [
-  "Athyrr/aikit",
-  "Fintama/swisper-superpowers",
-  "Itzalive/resistance-ai",
-  "orkeren21/shipshape"
+  {
+   "repo": "Athyrr/aikit",
+   "why": "no license declared"
+  },
+  {
+   "repo": "Fintama/swisper-superpowers",
+   "why": "no license declared"
+  },
+  {
+   "repo": "Itzalive/resistance-ai",
+   "why": "no license declared"
+  },
+  {
+   "repo": "orkeren21/shipshape",
+   "why": "no license declared"
+  }
  ],
  "refactored": "2026-10-20"
 }

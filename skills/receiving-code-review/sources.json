@@ -1,5 +1,6 @@
 {
  "slug": "receiving-code-review",
+ "summary": "It keeps the upstream principle (verify before implementing, no performative agreement) and tightens the process with a decision record and source-specific handling from stronger variants.",
  "derivedFrom": [
   {
    "repo": "obra/superpowers",
@@ -9,7 +10,8 @@
    "copyright": "Copyright (c) 2025 Jesse Vincent",
    "sha256": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438",
    "role": "Primary basis",
-   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/receiving-code-review/SKILL.md"
+   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/receiving-code-review/SKILL.md",
+   "took": "the six-step sequence, no agreement before verification, stop on anything unclear, source-specific handling, the \"implement it properly\" check, order of work, when and how to push back, how to correct a wrong pushback, the common-mistakes table and the examples."
   },
   {
    "repo": "yimwoo/hotl-plugin",
@@ -19,7 +21,8 @@
    "copyright": "Copyright (c) 2026 yimwoo",
    "sha256": "26516fda8327b9e48c2492ad2f8a7381739ac516d31b4b7cb16b6223a8908ec8",
    "role": "Added ideas",
-   "url": "https://github.com/yimwoo/hotl-plugin/blob/d86bf87181adcef822c091f544c0a313ddbb40a7/skills/receiving-code-review/SKILL.md"
+   "url": "https://github.com/yimwoo/hotl-plugin/blob/d86bf87181adcef822c091f544c0a313ddbb40a7/skills/receiving-code-review/SKILL.md",
+   "took": "treat feedback as input to evaluate, re-check findings against the current code if it changed since the review, the accept/reject/defer decision with recorded evidence, severity from an automated reviewer as a first guess only, and escalating a conflict with an approved decision instead of overriding it."
   },
   {
    "repo": "brunob54/superpowers-orchestrator",
@@ -29,24 +32,86 @@
    "copyright": "Copyright (c) 2025 Jesse Vincent",
    "sha256": "e70255af895ac2037e85b5c3add4528ed4e76b43f32721564e3d83adaba23845",
    "role": "Added ideas",
-   "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/receiving-code-review/SKILL.md"
+   "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/receiving-code-review/SKILL.md",
+   "took": "ordering fixes by effect (correctness and security first), treating Critical and High security findings as blocking, and the closing report of addressed items, deferrals, verification and remaining risks."
+  }
+ ],
+ "changed": [
+  "The description says what the skill does and what it is not for. Upstream's describes the behavior but not the job.",
+  "Softened \"never any gratitude, ever\" to \"no agreement before you have verified\". Once the reviewer is checked and right, a short factual acknowledgment is allowed. This is a judgment call: the upstream rule is the author's stylistic preference, and its own examples allow \"Good catch - [issue]. Fixed in [location]\".",
+  "Replaced \"your human partner\" with \"the person you work for\", and removed the quoted personal rules attributed to that person.",
+  "Added the accept, reject or defer decision with recorded evidence, and a closing report.",
+  "Removed the marker \"explicit instruction-file violation\", which refers to the original author's private instructions."
+ ],
+ "dropped": [
+  "The HOTL-specific contract vocabulary (intent contract, risk level, gates) from yimwoo/hotl-plugin, which only applies inside that system.",
+  "The routing language from brunob54/superpowers-orchestrator (\"routed by using-superpowers\")."
+ ],
+ "findings": [
+  {
+   "repo": "obra/superpowers",
+   "finding": "Calls \"ANY gratitude expression\" forbidden yet its own good examples include \"Good catch - [specific issue]. Fixed\". It quotes rules attributed to \"your human partner\" and mentions an \"explicit instruction-file violation\" that only make sense inside the author's setup."
+  },
+  {
+   "repo": "yimwoo/hotl-plugin",
+   "finding": "Good decision-record idea, but built on HOTL contracts (intent contract, success_criteria, risk_level, gates) that exist only in that plugin."
+  },
+  {
+   "repo": "brunob54/superpowers-orchestrator",
+   "finding": "Shorter and clear, but relies on another skill routing feedback to it and gives no worked examples."
   }
  ],
  "examined": [
-  "thepragmaticbear/bearpaws",
-  "gylove1994/superpowers-deepseek-v4",
-  "jnmetacode/superpowers-zh",
-  "leodorareluctant259/superpowers-zh",
-  "lsy041015/orchestra",
-  "VictorStochero/fluxo-orca",
-  "mzored/superpowers-cc-to-codex"
+  {
+   "repo": "thepragmaticbear/bearpaws",
+   "note": "Upstream recast in XML tags and shortened; no new ideas."
+  },
+  {
+   "repo": "gylove1994/superpowers-deepseek-v4",
+   "note": "A variant of upstream (97% similar)."
+  },
+  {
+   "repo": "jnmetacode/superpowers-zh",
+   "note": "A Chinese translation of upstream."
+  },
+  {
+   "repo": "leodorareluctant259/superpowers-zh",
+   "note": "A Chinese translation of upstream."
+  },
+  {
+   "repo": "lsy041015/orchestra",
+   "note": "A short summary tied to its own workflow."
+  },
+  {
+   "repo": "VictorStochero/fluxo-orca",
+   "note": "Identical to upstream."
+  },
+  {
+   "repo": "mzored/superpowers-cc-to-codex",
+   "note": "A Codex-backed port (87% similar to upstream)."
+  }
  ],
  "excluded": [
-  "Athyrr/aikit",
-  "Fintama/swisper-superpowers",
-  "Itzalive/resistance-ai",
-  "lukekeith/builder",
-  "orkeren21/shipshape"
+  {
+   "repo": "Athyrr/aikit",
+   "why": "no license declared"
+  },
+  {
+   "repo": "Fintama/swisper-superpowers",
+   "why": "no license declared"
+  },
+  {
+   "repo": "Itzalive/resistance-ai",
+   "why": "no license declared"
+  },
+  {
+   "repo": "lukekeith/builder",
+   "why": "no license declared"
+  },
+  {
+   "repo": "orkeren21/shipshape",
+   "why": "no license declared"
+  }
  ],
  "refactored": "2026-10-20"
 }
