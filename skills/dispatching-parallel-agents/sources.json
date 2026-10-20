@@ -1,0 +1,48 @@
+{
+ "slug": "dispatching-parallel-agents",
+ "derivedFrom": [
+  {
+   "repo": "obra/superpowers",
+   "path": "skills/dispatching-parallel-agents/SKILL.md",
+   "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c",
+   "role": "Primary basis",
+   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/dispatching-parallel-agents/SKILL.md"
+  },
+  {
+   "repo": "brunob54/superpowers-orchestrator",
+   "path": "skills/dispatching-parallel-agents/SKILL.md",
+   "commit": "90017a876a4d044934c9adcc7844a8cf1e34044d",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "439b8eb05268a2dcf29e7e2bed61e3c5237270f9f6e028fdf5a2d5c0f926739d",
+   "role": "Added ideas",
+   "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/dispatching-parallel-agents/SKILL.md"
+  },
+  {
+   "repo": "lsy041015/orchestra",
+   "path": "skills/dispatching-parallel-agents/SKILL.md",
+   "commit": "d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "c968ac3d31de2497849b1ecca94981b3ceacf6c6eb121126e92ded373cf91ac0",
+   "role": "Added ideas",
+   "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/dispatching-parallel-agents/SKILL.md"
+  }
+ ],
+ "examined": [
+  "jnmetacode/superpowers-zh",
+  "leodorareluctant259/superpowers-zh",
+  "mzored/superpowers-cc-to-codex",
+  "thepragmaticbear/bearpaws"
+ ],
+ "excluded": [
+  "Athyrr/aikit",
+  "Fintama/swisper-superpowers",
+  "Itzalive/resistance-ai",
+  "orkeren21/shipshape"
+ ],
+ "refactored": "2026-10-20"
+}

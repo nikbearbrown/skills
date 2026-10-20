@@ -1,0 +1,58 @@
+{
+ "slug": "requesting-code-review",
+ "derivedFrom": [
+  {
+   "repo": "obra/superpowers",
+   "path": "skills/requesting-code-review/SKILL.md",
+   "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8",
+   "role": "Primary basis",
+   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/requesting-code-review/SKILL.md"
+  },
+  {
+   "repo": "brunob54/superpowers-orchestrator",
+   "path": "skills/requesting-code-review/SKILL.md",
+   "commit": "90017a876a4d044934c9adcc7844a8cf1e34044d",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "e1986478fcdb5b51231f8ff38e80f6044c7321bb63e4d4000df1f81f97891703",
+   "role": "Added ideas",
+   "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/requesting-code-review/SKILL.md"
+  },
+  {
+   "repo": "thepragmaticbear/bearpaws",
+   "path": "skills/requesting-code-review/SKILL.md",
+   "commit": "9141dd043814d5e5c292d5d9c619adbdffdc4a05",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "cf9dfb6cab5dc210c3c16754b27b1ef735a8ee9a02cc425f991e8c9b2c1d78d1",
+   "role": "Added ideas",
+   "url": "https://github.com/thepragmaticbear/bearpaws/blob/9141dd043814d5e5c292d5d9c619adbdffdc4a05/skills/requesting-code-review/SKILL.md"
+  },
+  {
+   "repo": "lsy041015/orchestra",
+   "path": "skills/requesting-code-review/SKILL.md",
+   "commit": "d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "a90dfff3fb47d815227230706773fd6377b29eecae2fb6538a813c09e8bb655e",
+   "role": "Added ideas",
+   "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/requesting-code-review/SKILL.md"
+  }
+ ],
+ "examined": [
+  "gylove1994/superpowers-deepseek-v4",
+  "jnmetacode/superpowers-zh",
+  "leodorareluctant259/superpowers-zh",
+  "mzored/superpowers-cc-to-codex"
+ ],
+ "excluded": [
+  "Athyrr/aikit",
+  "Fintama/swisper-superpowers",
+  "Itzalive/resistance-ai",
+  "orkeren21/shipshape"
+ ],
+ "refactored": "2026-10-20"
+}

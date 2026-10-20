@@ -1,0 +1,178 @@
+[
+ {
+  "slug": "dispatching-parallel-agents",
+  "name": "dispatching-parallel-agents",
+  "description": "Split two or more truly independent problems across parallel agents or workers, one focused brief each, then integrate and verify the combined result. Use when several failures, files or subsystems have separate causes and no shared state, and the user wants them worked concurrently. Not for related failures, exploration, diagnosis of one unknown problem, or tasks that edit the same files.",
+  "license": "MIT",
+  "words": 952,
+  "sources": [
+   {
+    "repo": "obra/superpowers",
+    "path": "skills/dispatching-parallel-agents/SKILL.md",
+    "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+    "license": "MIT",
+    "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/dispatching-parallel-agents/SKILL.md"
+   },
+   {
+    "repo": "brunob54/superpowers-orchestrator",
+    "path": "skills/dispatching-parallel-agents/SKILL.md",
+    "commit": "90017a876a4d044934c9adcc7844a8cf1e34044d",
+    "license": "MIT",
+    "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/dispatching-parallel-agents/SKILL.md"
+   },
+   {
+    "repo": "lsy041015/orchestra",
+    "path": "skills/dispatching-parallel-agents/SKILL.md",
+    "commit": "d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5",
+    "license": "MIT",
+    "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/dispatching-parallel-agents/SKILL.md"
+   }
+  ],
+  "refactored": "2026-10-20"
+ },
+ {
+  "slug": "receiving-code-review",
+  "name": "receiving-code-review",
+  "description": "Handle review feedback with technical rigor - verify each comment against the code before acting on it, ask about anything unclear, and push back with evidence when it is wrong. Use when review comments, a pull request review or reviewer findings arrive, before implementing any suggestion, and especially when feedback looks unclear or questionable. Not for writing a review.",
+  "license": "MIT",
+  "words": 1056,
+  "sources": [
+   {
+    "repo": "obra/superpowers",
+    "path": "skills/receiving-code-review/SKILL.md",
+    "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+    "license": "MIT",
+    "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/receiving-code-review/SKILL.md"
+   },
+   {
+    "repo": "yimwoo/hotl-plugin",
+    "path": "skills/receiving-code-review/SKILL.md",
+    "commit": "d86bf87181adcef822c091f544c0a313ddbb40a7",
+    "license": "MIT",
+    "url": "https://github.com/yimwoo/hotl-plugin/blob/d86bf87181adcef822c091f544c0a313ddbb40a7/skills/receiving-code-review/SKILL.md"
+   },
+   {
+    "repo": "brunob54/superpowers-orchestrator",
+    "path": "skills/receiving-code-review/SKILL.md",
+    "commit": "90017a876a4d044934c9adcc7844a8cf1e34044d",
+    "license": "MIT",
+    "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/receiving-code-review/SKILL.md"
+   }
+  ],
+  "refactored": "2026-10-20"
+ },
+ {
+  "slug": "requesting-code-review",
+  "name": "requesting-code-review",
+  "description": "Get a change independently reviewed against its requirements before it moves on. Use after finishing a task or a major feature, after fixing a complex bug, and before merging, or when the user asks for \"a code review\", \"a second pair of eyes\", \"a security check\" or \"review before merge\". Covers what to give the reviewer, what a usable review contains, and how to act on it.",
+  "license": "MIT",
+  "words": 852,
+  "sources": [
+   {
+    "repo": "obra/superpowers",
+    "path": "skills/requesting-code-review/SKILL.md",
+    "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+    "license": "MIT",
+    "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/requesting-code-review/SKILL.md"
+   },
+   {
+    "repo": "brunob54/superpowers-orchestrator",
+    "path": "skills/requesting-code-review/SKILL.md",
+    "commit": "90017a876a4d044934c9adcc7844a8cf1e34044d",
+    "license": "MIT",
+    "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/requesting-code-review/SKILL.md"
+   },
+   {
+    "repo": "thepragmaticbear/bearpaws",
+    "path": "skills/requesting-code-review/SKILL.md",
+    "commit": "9141dd043814d5e5c292d5d9c619adbdffdc4a05",
+    "license": "MIT",
+    "url": "https://github.com/thepragmaticbear/bearpaws/blob/9141dd043814d5e5c292d5d9c619adbdffdc4a05/skills/requesting-code-review/SKILL.md"
+   },
+   {
+    "repo": "lsy041015/orchestra",
+    "path": "skills/requesting-code-review/SKILL.md",
+    "commit": "d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5",
+    "license": "MIT",
+    "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/requesting-code-review/SKILL.md"
+   }
+  ],
+  "refactored": "2026-10-20"
+ },
+ {
+  "slug": "systematic-debugging",
+  "name": "systematic-debugging",
+  "description": "Find the root cause of a bug before changing any code. Use whenever something is already broken or behaving unexpectedly - a failing or flaky test, crash, exception, stack trace, regression, build break, performance problem or integration failure - and especially when guessing at a fix is tempting. Not for writing new features or reviewing code that works.",
+  "license": "MIT",
+  "words": 1508,
+  "sources": [
+   {
+    "repo": "obra/superpowers",
+    "path": "skills/systematic-debugging/SKILL.md",
+    "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+    "license": "MIT",
+    "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/systematic-debugging/SKILL.md"
+   },
+   {
+    "repo": "phmatray/ai-migration-kit",
+    "path": "skills/systematic-debugging/SKILL.md",
+    "commit": "d84cb9774909e885529047fd82821fa16740a0f0",
+    "license": "MIT",
+    "url": "https://github.com/phmatray/ai-migration-kit/blob/d84cb9774909e885529047fd82821fa16740a0f0/skills/systematic-debugging/SKILL.md"
+   },
+   {
+    "repo": "lsy041015/orchestra",
+    "path": "skills/systematic-debugging/SKILL.md",
+    "commit": "d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5",
+    "license": "MIT",
+    "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/systematic-debugging/SKILL.md"
+   }
+  ],
+  "refactored": "2026-10-20"
+ },
+ {
+  "slug": "test-driven-development",
+  "name": "test-driven-development",
+  "description": "Drive a feature, bug fix, refactor or behavior change with strict red-green-refactor - write one failing test, watch it fail for the right reason, write the least code that passes, then clean up while green. Use before writing any implementation code, when fixing a bug, or when the user says \"TDD\", \"test first\" or \"red-green-refactor\", or asks why a passing test proves nothing.",
+  "license": "MIT",
+  "words": 2023,
+  "sources": [
+   {
+    "repo": "obra/superpowers",
+    "path": "skills/test-driven-development/SKILL.md",
+    "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+    "license": "MIT",
+    "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/test-driven-development/SKILL.md"
+   },
+   {
+    "repo": "leobbaroni/cockpit",
+    "path": "skills/test-driven-development/SKILL.md",
+    "commit": "67ad0773258f64a5e4a1bdbc0c3e7d757fc4fa84",
+    "license": "MIT",
+    "url": "https://github.com/leobbaroni/cockpit/blob/67ad0773258f64a5e4a1bdbc0c3e7d757fc4fa84/skills/test-driven-development/SKILL.md"
+   },
+   {
+    "repo": "j0hanz/squad-agents",
+    "path": "skills/test-driven-development/SKILL.md",
+    "commit": "af44079009dd3f21dc2f4fd3c18807b0d2978d73",
+    "license": "MIT",
+    "url": "https://github.com/j0hanz/squad-agents/blob/af44079009dd3f21dc2f4fd3c18807b0d2978d73/skills/test-driven-development/SKILL.md"
+   },
+   {
+    "repo": "thoughtbot/rails-consultant",
+    "path": "skills/test-driven-development/SKILL.md",
+    "commit": "9807306250b2fa86886568be3a6d40cefabe5b4a",
+    "license": "MIT",
+    "url": "https://github.com/thoughtbot/rails-consultant/blob/9807306250b2fa86886568be3a6d40cefabe5b4a/skills/test-driven-development/SKILL.md"
+   },
+   {
+    "repo": "lsy041015/orchestra",
+    "path": "skills/test-driven-development/SKILL.md",
+    "commit": "d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5",
+    "license": "MIT",
+    "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/test-driven-development/SKILL.md"
+   }
+  ],
+  "refactored": "2026-10-20"
+ }
+]

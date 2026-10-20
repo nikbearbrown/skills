@@ -1,0 +1,52 @@
+{
+ "slug": "receiving-code-review",
+ "derivedFrom": [
+  {
+   "repo": "obra/superpowers",
+   "path": "skills/receiving-code-review/SKILL.md",
+   "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438",
+   "role": "Primary basis",
+   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/receiving-code-review/SKILL.md"
+  },
+  {
+   "repo": "yimwoo/hotl-plugin",
+   "path": "skills/receiving-code-review/SKILL.md",
+   "commit": "d86bf87181adcef822c091f544c0a313ddbb40a7",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2026 yimwoo",
+   "sha256": "26516fda8327b9e48c2492ad2f8a7381739ac516d31b4b7cb16b6223a8908ec8",
+   "role": "Added ideas",
+   "url": "https://github.com/yimwoo/hotl-plugin/blob/d86bf87181adcef822c091f544c0a313ddbb40a7/skills/receiving-code-review/SKILL.md"
+  },
+  {
+   "repo": "brunob54/superpowers-orchestrator",
+   "path": "skills/receiving-code-review/SKILL.md",
+   "commit": "90017a876a4d044934c9adcc7844a8cf1e34044d",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "e70255af895ac2037e85b5c3add4528ed4e76b43f32721564e3d83adaba23845",
+   "role": "Added ideas",
+   "url": "https://github.com/brunob54/superpowers-orchestrator/blob/90017a876a4d044934c9adcc7844a8cf1e34044d/skills/receiving-code-review/SKILL.md"
+  }
+ ],
+ "examined": [
+  "thepragmaticbear/bearpaws",
+  "gylove1994/superpowers-deepseek-v4",
+  "jnmetacode/superpowers-zh",
+  "leodorareluctant259/superpowers-zh",
+  "lsy041015/orchestra",
+  "VictorStochero/fluxo-orca",
+  "mzored/superpowers-cc-to-codex"
+ ],
+ "excluded": [
+  "Athyrr/aikit",
+  "Fintama/swisper-superpowers",
+  "Itzalive/resistance-ai",
+  "lukekeith/builder",
+  "orkeren21/shipshape"
+ ],
+ "refactored": "2026-10-20"
+}

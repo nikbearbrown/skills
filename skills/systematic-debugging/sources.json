@@ -1,0 +1,54 @@
+{
+ "slug": "systematic-debugging",
+ "derivedFrom": [
+  {
+   "repo": "obra/superpowers",
+   "path": "skills/systematic-debugging/SKILL.md",
+   "commit": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
+   "role": "Primary basis",
+   "url": "https://github.com/obra/superpowers/blob/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/systematic-debugging/SKILL.md"
+  },
+  {
+   "repo": "phmatray/ai-migration-kit",
+   "path": "skills/systematic-debugging/SKILL.md",
+   "commit": "d84cb9774909e885529047fd82821fa16740a0f0",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2026 Philippe Matray",
+   "sha256": "3a6022d758b31ffc7cab1052150dc40a90fb3eefd28f56d451df4ddf9a8a4dda",
+   "role": "Structure and wording",
+   "url": "https://github.com/phmatray/ai-migration-kit/blob/d84cb9774909e885529047fd82821fa16740a0f0/skills/systematic-debugging/SKILL.md"
+  },
+  {
+   "repo": "lsy041015/orchestra",
+   "path": "skills/systematic-debugging/SKILL.md",
+   "commit": "d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5",
+   "license": "MIT",
+   "copyright": "Copyright (c) 2025 Jesse Vincent",
+   "sha256": "752218c69415603cb4eb047d800675e0f47588142a21f622a94b0cd842395a7c",
+   "role": "Added idea",
+   "url": "https://github.com/lsy041015/orchestra/blob/d23927aa31b1fcd1e2b2c2ac44c5e53136e27dc5/skills/systematic-debugging/SKILL.md"
+  }
+ ],
+ "examined": [
+  "VictorStochero/fluxo-orca",
+  "gylove1994/superpowers-deepseek-v4",
+  "jnmetacode/superpowers-zh",
+  "leodorareluctant259/superpowers-zh",
+  "cheng6563/litepowers",
+  "jsonlee12138/agent-team",
+  "mzored/superpowers-cc-to-codex",
+  "sitien173/superpowers-ccg",
+  "thepragmaticbear/bearpaws"
+ ],
+ "excluded": [
+  "Athyrr/aikit",
+  "Fintama/swisper-superpowers",
+  "Itzalive/resistance-ai",
+  "lukekeith/builder",
+  "orkeren21/shipshape"
+ ],
+ "refactored": "2026-10-20"
+}
