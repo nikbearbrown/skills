@@ -1,6 +1,6 @@
 {
  "slug": "test-driven-development",
- "summary": "It keeps the discipline of the most widely cloned version (obra/superpowers) and adds what the better variants found missing.",
+ "summary": "It keeps the discipline of the version the others copy (obra/superpowers) and adds what the better variants found missing.",
  "derivedFrom": [
   {
    "repo": "obra/superpowers",

@@ -1,6 +1,6 @@
 # Sources: test-driven-development
 
-**This skill is a rewrite, not a copy.** It keeps the discipline of the most widely cloned version (obra/superpowers) and adds what the better variants found missing.
+**This skill is a rewrite, not a copy.** It keeps the discipline of the version the others copy (obra/superpowers) and adds what the better variants found missing.
 
 Written by Nik Bear Brown with Claude, refactored from the sources below. Each source was fetched at the pinned commit the auditor recorded (github.com/nikbearbrown/github-claude-plugins), and each is MIT, Apache-2.0 or similarly permissive. Attribution is in the repository NOTICE.
 
